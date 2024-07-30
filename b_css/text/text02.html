@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text02.html</title>
+
+  <style>
+    body {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    h1 {
+      background-color: #0F0;
+      color: #FF0000;
+    }
+
+    p {
+      background-color: #CCC;
+      color: #000;
+    }
+
+    h2 {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+    }
+
+    span {
+      background-color: rgba(0, 0, 255, 0.5);
+      color: rgba(255, 0, 0, 0.5);
+    }
+
+    .hello {
+      width: 400px;
+
+
+      text-align: left;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .justify {
+      text-align: justify;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 16진수 숫자0 : 검은색 , 알파벳f : 흰색 -->
+   <!-- 6자리 : #RRGGBB 3자리 : #RGB  레드 그린 블루 -->
+  <h1>하이 꼬미발바닥 손톱</h1>
+  <p>방가</p>
+
+  <!--
+    rgb 숫자 : rgb(r,g,b) 각 영역의 값을 0 부터 255까지
+    rgba의 a(alpha)값은 0~1까지의 값으로 지정
+  -->
+  <h2>하요</h2>
+  <span>방가요</span>
+
+  <!-- text-align 속성 -->
+  <p class="hello">안녕</p>
+  <p class="hello center">안녕</p>
+  <p class="hello justify">안녕dksdjfkfffffffffffffffffffffffffffffffffffffffffffffffffffffffffjdfljsdf ljdslfjsdlfjsdlf jdlfjdslfjkdsljkflsdkj</p>
+
+  <!-- line-height : 기준이 현재 문단의 글자 크기
+        ex) 글자 크기가 16px인 문단의 줄 간격 : 1 -->
+  <p class="line" style="line-height: 20px;">안녕dksdjfkfffffffffffffffffffffffffffffffffffffffffffffffffffffffffjdfljsdf ljdslfjsdlfjsdlf jdlfjdslfjkdsljkflsdkj</p>
+
+
+  <!--  -->
+  <div style="background-color: white; height: 100px;">
+    <p style="line-height: 100px; text-align: center;">세로 정렬, 가운데 정렬</p>
+  </div>
+
+  <!-- text-decoration 속성 -->
+  <div style="background-color: white;">
+    <span style="text-decoration: none; background-color: white; color: black">none</span>
+    <span style="text-decoration: none; background-color: white; color: black">under-line</span>
+    <span style="text-decoration: none; background-color: white; color: black">
+      overlinenone
+    </span> none
+    <span style="text-decoration: none; background-color: white; color: black">
+      line through
+    </span>
+  </div>
+
+  <div style="background-color: #ccc;">
+    <!-- text shadow 속성 -->
+    <!-- 가로거리 세로거리 번짐정도 색상 -->
+    <span style="text-shadow: 2px 2px 2px black;">
+      그림자
+    </span>
+    <span style="text-shadow: -2px -2px 2px black;">
+      그림자
+    </span>
+    <span style="text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);">
+      그림자
+    </span>
+    <!--  -->
+
+    <!-- letter(글자) & word(단어) spacing-->
+
+    <p style="letter-spacing: 4px;">letter spacing</p>
+    <p style="word-spacing: 10px;">word spacing</p>
+
+    
+    
+  </div>
+  <!-- text-indent 들여쓰기 -->
+  <p style="text-indent: 30px;">text indent 속성</p>
+</body>
+</html>

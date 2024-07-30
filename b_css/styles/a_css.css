@@ -1,0 +1,13 @@
+/* css 주석 */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: lightblue;
+}
+
+td {
+  background-color: #ccc;
+}
