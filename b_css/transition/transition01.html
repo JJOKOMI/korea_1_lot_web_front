@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #container{
+      width: 150px;
+      height: 150px;
+      background-color: lightblue;
+      font-size: 16px;
+      /* all : 모든 변경 가능한 속성에 적용
+        속성명을 나열하여 각각 적용 가능
+        1s는 1000ms (밀리초)*/
+      transition: all 1000ms ease-in-out;
+    }
+
+    #container:hover {
+      background-color: lightcoral;
+      font-size: 20px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .box{
+      display: flex;
+
+    }
+    .inner {
+      width: 100px;
+      height: 100px;
+      background-color: lightgreen;
+
+
+      opacity: 1;
+
+      transition: width 2s ease-in-out;
+                  background-color: 1.5s ease-in-out;
+                  opacity: 1s ease-in-out;
+                  height: 0.5s ease-in-out;
+      
+      transition: all 0.5s ease-in-out;
+    }
+
+    .inner:hover {
+      width: 200px;
+      height: 150px;
+      background-color: lightpink;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    블럭
+  </div>
+  <hr />
+
+  <div class="box">
+    <div class="inner"></div>
+  </div>
+</body>
+</html>
