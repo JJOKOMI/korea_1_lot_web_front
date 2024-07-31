@@ -25,5 +25,5 @@ switch(true){
     console.log('안');
     break;
 };
-
+//다시
 true || console.log('출력a');
