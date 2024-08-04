@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 10px 20px;
+  /* background-color: rgb(50, 48, 48); */
+  border-bottom: 1px solid #ddd;
+  
+}
+.header-right {
+  color: #eee;
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+.header-right a {
+  text-decoration: none;
+  color: #333;
+}
+.banner {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+}
+.banner h1 {
+  margin: 0;
+}
+.main-content {
+  padding: 20px;
+}
+.main-content .large-photo {
+  text-align: center;
+  margin: 20px 0;
+}
+.main-content .large-photo img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+.search-bar {
+  text-align: center;
+  margin: 20px 0;
+}
+.search-bar input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+}
+.main-boxes {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.main-boxes .box {
+  width: 18%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+.downloads {
+  text-align: center;
+}
+.downloads button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
